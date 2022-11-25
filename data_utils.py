@@ -56,7 +56,7 @@ class ValidationDatasetLoader(Dataset):
         super().__init__()
         self.factor = factor
         self.image_files = [p for p in dataset_dir.iterdir() if p.is_file() and is_image_file(p.absolute())]
-        self.image_files = self.image_files[:500]
+        self.image_files = self.image_files[600:800]
         self.to_tensor = ToTensor()
 
         

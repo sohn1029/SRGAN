@@ -39,8 +39,8 @@ if not os.path.exists(test_path):
     os.makedirs(test_path)
 
 for f in train_data:
-    shutil.move('./data/'+f, train_path)
+    shutil.move('./data/'+f, train_path+f)
 for f in valid_data:
-    shutil.move('./data/'+f, valid_path)
+    shutil.move('./data/'+f, valid_path+f)
 for f in test_data:
-    shutil.move('./data/'+f, test_path)
+    shutil.move('./data/'+f, test_path+f)
