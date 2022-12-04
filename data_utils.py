@@ -66,7 +66,7 @@ class ValidationDatasetLoader(Dataset):
         sample = Image.open(self.image_files[index])
         width, height = sample.size
         crop_size = min(width, height)
-        crop_size - crop_size % self.factor
+        crop_size = crop_size - crop_size % self.factor
         
         hr_transform = CenterCrop(crop_size)
         lr_transform = Resize(crop_size// self.factor, interpolation=Image.BICUBIC)

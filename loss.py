@@ -20,7 +20,7 @@ class GeneratorLoss(nn.Module):
         perception_loss = self.mse_loss(self.loss_network(out_images), self.loss_network(target_images))
         image_loss = self.mse_loss(out_images, target_images)
         tv_loss = self.tv_loss(out_images)
-        return 0.001*adversarial_loss + image_loss + 0.006*perception_loss + 2e-5*tv_loss
+        return 0.001*adversarial_loss + image_loss + 0.05*perception_loss + 2e-8*tv_loss
 
 
 
