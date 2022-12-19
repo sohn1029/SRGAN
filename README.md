@@ -4,7 +4,6 @@
 > https://sohn1029.github.io/posts/ai/dl/srgan/
   
 ### Related Reference
----------------------
 > [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)   (SRGAN Paper)  
 > https://wikidocs.net/146367   (SRGAN Korean Explanation)  
 > https://github.com/leftthomas/SRGAN   (SRGAN Paper Implementation with TVLoss)  
